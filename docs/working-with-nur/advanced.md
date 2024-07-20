@@ -1,5 +1,6 @@
 ---
 title: Advanced
+parent: Working with nur
 layout: default
 nav_order: 40
 ---

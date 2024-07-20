@@ -1,5 +1,6 @@
 ---
 title: Define tasks
+parent: Working with nur
 layout: default
 nav_order: 10
 ---

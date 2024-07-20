@@ -1,5 +1,6 @@
 ---
 title: Call external commands
+parent: Working with nur
 layout: default
 nav_order: 20
 ---
