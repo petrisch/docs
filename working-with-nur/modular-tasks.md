@@ -14,7 +14,7 @@ nav_order: 30
 You can define any command you like and need to use. Just know that subcommands to `"nur"` will
 be available as tasks. All other commands will not be available.
 
-```nu-script
+```shell
 def some-helper [] {
     do-something-useful
 }
@@ -33,7 +33,7 @@ called `.nur/scripts/` into `$env.NU_LIB_DIRS`. This allows you to define `nu` m
 then use those in your `nurfile`.
 
 Basic hello world example:
-```nu-script
+```shell
 # .nur/scripts/hello-world.nu
 
 export def main [] {
@@ -41,7 +41,7 @@ export def main [] {
 }
 ```
 
-```nu-script
+```shell
 # nurfile
 use hello-world.nu
 

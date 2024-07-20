@@ -17,7 +17,7 @@ current working directory and all its parents to look for this file. When it has
 it will change to the directory the file was found in and then `source` the file into `nu` script.
 You can define tasks like this:
 
-```nu-script
+```shell
 # Just tell anybody or the "world" hello
 def "nur hello" [
     name: string = "world"  # The name to say hello to

@@ -19,7 +19,7 @@ The same rule applies to your user defined functions, you would for example prov
 named `grep` (`def grep [] { ... }`) which could call the `grep` command using `^grep`.
 
 Example calling `ls` and `sort` system commands:
-```nu-script
+```shell
 def "nur call-sort" [] {
     ^ls | ^sort
 }
@@ -35,7 +35,7 @@ If you want to use a `nur` to run and wrap any normal command - for example to e
 any subdirectory of your project - I recommend using the following schema (using the `poetry`
 package manager as an example):
 
-```nu-script
+```shell
 def --wrapped "nur poetry" [...args] {
     poetry ...$args
 }
@@ -73,7 +73,7 @@ Getting the `docker ps` text data input `nu` can for example be done using `dock
 for more possible input formats.
 
 To get the first container matching using the image `some-name` you could use this command:
-```nu-script
+```shell
 docker ps | from ssv | where IMAGE == "some-name" | get "CONTAINER ID" | first
 ```
 

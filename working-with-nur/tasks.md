@@ -16,7 +16,7 @@ This means you define `nur` tasks  like `def "nur something"` - which you can th
 `nur something`. `nur` tasks can call any other `nu` commands or system command.
 
 The most basic `nur` task could look like this:
-```nu-script
+```shell
 def "nur hello-world" [] {
     print "Hello world"
 }
@@ -46,7 +46,7 @@ redirected mixed output and result in errors handling the results. When using `n
 accordingly.
 
 An example using `print`:
-```nu-script
+```shell
 def "nur do-something-useful" [] {
     print "We will do something useful now:"
     run-command-1 | print
@@ -89,7 +89,7 @@ An example using a default value could look like this:
 `def "nur taskname" [argument1 = "value", argument2 = 10] { ... }`
 
 Example with different kinds of arguments:
-```nu-script
+```shell
 def "nur something" [
     name: string
     optional?: string
@@ -109,7 +109,7 @@ Basic rule is that the commend right above your task will be used as a descripti
 Comments next to any argument will be used to document that argument.
 
 Example task documentation:
-```nu-script
+```shell
 # This is the documentation used for your task
 # you may use multiple lines
 #
@@ -145,7 +145,7 @@ Parameters:
 
 Like with normal `nu` shell commands `nur` can also handle sub commands and thus sub tasks.
 
-```nu-script
+```shell
 def "nur something sub" [] {
     print "The sub task to something"
 }
