@@ -14,7 +14,7 @@ recommended workflow is:
 2. Gradually convert your tasks to be written in `nu` shell script inside the generated `nurfile`
 3. When everything is ready, remove the old task runner config and use `nur` from this day forward 👍
 
-To simplify this progress I have created a [`nurify`](scripts/nurify.nu) script to generate a `nurfile` from
+To simplify this progress I have created the [`nurify`](https://github.com/ddanier/nur/blob/main/scripts/nurify.nu) script to generate a `nurfile` from
 many existing task runners. You can use this to simplify the first step. `nurify` is written in `nu` shell script,
 so you need to use `nu` for this to work.
 

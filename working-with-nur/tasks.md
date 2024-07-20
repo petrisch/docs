@@ -29,7 +29,8 @@ script code.
 
 For the most tasks this means your `nur` task will just execute some system commands like `poetry install`
 or `npm ci` or `cargo publish` or something similar - but you can also create more complex tasks,
-however you like. You may look into the [`nurfile`](nurfile) of `nur` itself for some examples.
+however you like. You may look into the [`nurfile`](https://github.com/ddanier/nur/blob/main/nurfile) of
+`nur` itself for some examples.
 
 `nu` commands will use the result of the last line in the command body as the command return value. `nur`
 will then automatically print the return values of the task. The importand thing to understand is that `nu`

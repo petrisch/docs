@@ -8,7 +8,7 @@ nav_order: 20
 
 ## Installing `nur`
 
-See [installation]({% link docs/installation.md %}) for details on how to install `nur`.
+See [installation]({% link installation.md %}) for details on how to install `nur`.
 
 ## Quick overview and example
 

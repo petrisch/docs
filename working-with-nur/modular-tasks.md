@@ -39,7 +39,9 @@ Basic hello world example:
 export def main [] {
     print "Hello world"
 }
+```
 
+```nu-script
 # nurfile
 use hello-world.nu
 
