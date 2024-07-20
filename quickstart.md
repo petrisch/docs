@@ -46,7 +46,7 @@ recommend reading the `nu` documentation about  [custom commands](https://www.nu
 define `nu` commands (and `nur` tasks) and at least read through the [nu quick tour](https://www.nushell.sh/book/quick_tour.html)
 to understand some basics and benefits about `nu` scripting.
 
-See [working with nur]({% link working-with-nur/working-with-nur.md %}) for more details on how to define tasks.
+See [working with nur]({% link working-with-nur/index.md %}) for more details on how to define tasks.
 
 ## Add a `nurfile` to your project
 
@@ -66,5 +66,6 @@ something like:
 * `nur test`: Run all tests
 * `nur lint`: Lint the project
 * `nur run`: Run the project, for web project start the dev server
+* etc.
 
 See [best practices]({% link best-practices.md %}) for more details on how to structure your tasks.

@@ -12,3 +12,7 @@ Welcome to the nur documentation!
 and [`just`](https://github.com/casey/just), but uses [`nu` shell scripting](https://www.nushell.sh/book/programming_in_nu.md)
 to define the tasks. This allows for well-structured tasks while being able to use the super-powers of `nu`
 in your tasks.
+
+* [Quickstart]({% link quickstart.md %})
+* [How to install nur]({% link installation.md %})
+* [Working with nur]({% link working-with-nur/index.md %})
