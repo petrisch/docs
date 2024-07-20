@@ -1,0 +1,11 @@
+def "nur install" [] {
+    bundle install
+}
+
+def "nur update" [] {
+    bundle update
+}
+
+def "nur run" [] {
+    bundle exec jekyll serve
+}
