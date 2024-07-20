@@ -1,5 +1,5 @@
 ---
-title: Working with nur
+title: Switching to nur
 layout: default
 nav_order: 40
 ---
