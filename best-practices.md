@@ -16,6 +16,8 @@ nav_order: 50
     - `nur test`: Run the tests
     - `nur lint`: Run the linter
     - `nur qa`: Run all QA jobs (like tests + linter)
+* When using more complec tasks, think about using [modules]({% link working-with-nur/modular-tasks.md %}) to 
+  help you structure your tasks.
 * On monorepos provide the same tasks for the whole project but also variants for the different components like
   `nur backend test` and `nur frontend test` which will both be run by `nur test`
 * Use sub-tasks to group similar tasks. If you for example have tasks for exporting and importing the DB data

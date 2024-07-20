@@ -9,7 +9,8 @@ nav_order: 10
 As of now `nur` is not available using common package managers. This is however no issue as `cargo`
 allows you to install packages into your own user directory.
 
-**Note:** You need to have `cargo` installed for this to work. See [cargo install docs](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+{: .note }
+You need to have `cargo` installed for this to work. See [cargo install docs](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 for details on getting `cargo` running.
 
 Just run `cargo install nur` to install `nur` for your current user. The `nur` binary will be
@@ -30,7 +31,8 @@ Shell example (like Bash, zsh, ...):
 > nur --version
 ```
 
-**Important:** You do **not** need to have `nu` shell installed for `nur` to work. `nur` does
+{: .important }
+You do **not** need to have `nu` shell installed for `nur` to work. `nur` does
 include the whole `nu` runtime engine and will run as a standalone command.
 
 # Alternative installation methods

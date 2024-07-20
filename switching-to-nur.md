@@ -21,4 +21,5 @@ so you need to use `nu` for this to work.
 Usage: Put `nurify.nu` into your `NU_LIB_DIRS`, for example by using `cp nurify.nu $env.NU_LIB_DIRS.0`. Then
 update your `nu` config script by adding `use nurify.nu` (you may use `vim $nu.config-path` to edit this file).
 
+{: .note }
 *Pull requests to add additional task/command runners to `nurify` are very much welcome!*
