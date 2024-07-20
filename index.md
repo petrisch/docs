@@ -16,3 +16,7 @@ in your tasks.
 * [Quickstart]({% link quickstart.md %})
 * [How to install nur]({% link installation.md %})
 * [Working with nur]({% link working-with-nur/index.md %})
+
+{: .important }
+You don't need to switch to `nu` shell to use `nur`. You can use `nur` from any shell, including `bash`,
+`zsh`, `fish`, `powershell` and of course `nu` shell itself. `nur` runs on Windows, MacOS and Linux.
