@@ -1,8 +1,8 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: nur docs
+description: Documentation for nur - a taskrunner based on nu shell
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://nur-taskrunner.github.io/docs/
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  nur: https://github.com/ddanier/nur
