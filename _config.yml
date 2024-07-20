@@ -4,9 +4,6 @@ theme: just-the-docs
 
 url: https://nur-taskrunner.github.io/docs/
 
-aux_links:
-  nur: https://github.com/ddanier/nur
-
 nav_external_links:
   - title: nur on GitHub
     url: https://github.com/ddanier/nur
