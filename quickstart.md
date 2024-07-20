@@ -1,3 +1,9 @@
+---
+title: Quickstart
+layout: default
+nav_order: 20
+---
+
 # Quickstart
 
 ## Installing `nur`
