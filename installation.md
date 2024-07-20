@@ -6,6 +6,12 @@ nav_order: 10
 
 # Installing `nur`
 
+{: .important }
+You do **not** need to have `nu` shell installed for `nur` to work. `nur` does
+include the whole `nu` runtime engine and will run as a standalone command. As of this
+it will run on any shell including `bash`, `zsh`, `fish`, `powershell` and `nu` shell. You
+can use `nur` on Windows, MacOS and Linux.
+
 As of now `nur` is not available using common package managers. This is however no issue as `cargo`
 allows you to install packages into your own user directory.
 
@@ -31,17 +37,13 @@ Shell example (like Bash, zsh, ...):
 > nur --version
 ```
 
-{: .important }
-You do **not** need to have `nu` shell installed for `nur` to work. `nur` does
-include the whole `nu` runtime engine and will run as a standalone command.
-
 # Alternative installation methods
 
 ## MacOS
 
 For MacOS you can use my unofficial [Homebrew](https://brew.sh/) tap to install `nur`. All necessary
 steps are documented in the repository:
-[https://github.com/ddanier/nur-homebrew](https://github.com/ddanier/nur-homebrew)
+[https://github.com/ddanier/nur-homebrew](https://github.com/ddanier/nur-homebrew)  
 (This will allow you to just use `brew install nur`)
 
 ## Windows 

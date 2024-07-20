@@ -2,7 +2,7 @@
 title: Advanced
 parent: Working with nur
 layout: default
-nav_order: 40
+nav_order: 60
 ---
 
 # Advanced
@@ -44,6 +44,24 @@ configuration.
 See the [`nu` documentation on `env.nu` and `config.nu` files](https://www.nushell.sh/book/configuration.html#nushell-configuration-with-env-nu-and-config-nu)
 for some more insights. You may use the [default variants of both files](https://github.com/ddanier/nur/tree/main/src/nu-scripts)
 as the base to do any modifications.
+
+## Using aliases
+
+You may use `nu` aliases to create shorter versions of tasks. As this most of the time is a personal optimisation
+I recommend to set aliases only in  your personal `nurfile.local`.
+
+Example:
+```shell
+# Install task defined by nurfile
+def "nur install" [] {
+    # ...
+}
+
+# Personal alias
+alias "nur i" = nur install
+```
+
+This will allow you to use `nur i` instead of `nur install` to run the `nur install` task.
 
 ## Advanced topics and further reading
 

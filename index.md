@@ -18,5 +18,5 @@ in your tasks.
 * [Working with nur]({% link working-with-nur/index.md %})
 
 {: .important }
-You don't need to switch to `nu` shell to use `nur`. You can use `nur` from any shell, including `bash`,
-`zsh`, `fish`, `powershell` and of course `nu` shell itself. `nur` runs on Windows, MacOS and Linux.
+You don't need to use `nu` as your shell to use `nur`. You can use `nur` from any shell, including `bash`,
+`zsh`, `fish`, `powershell` and of course `nu` shell. `nur` runs on Windows, MacOS and Linux.

@@ -8,53 +8,38 @@ nav_order: 20
 
 ## Installing `nur`
 
-See [installation]({% link installation.md %}) for details on how to install `nur`.
-
-## Quick overview and example
-
-`nur` allows you to execute tasks defined in a file called `nurfile`. It will look through your
-current working directory and all its parents to look for this file. When it has found the `nurfile`
-it will change to the directory the file was found in and then `source` the file into `nu` script.
-You can define tasks like this:
-
+If you are familiar with `rust`/`cargo` you may want to install `nur` using `cargo`:
 ```shell
-# Just tell anybody or the "world" hello
-def "nur hello" [
-    name: string = "world"  # The name to say hello to
-] {
-    print $"hello ($name)"
-}
+> cargo install nur
 ```
 
-The important bit is that you define your tasks as subcommands for "nur". If you then execute
-`nur hello` it will print "hello world", meaning it did execute the task `hello` in your `nurfile`.
-You can also use `nur --help` to get some details on how to use `nur` and `nur --help hello` to
-see what this `hello` task accepts as parameters.
-
-You may also pass arguments to your `nur` tasks, like using `nur hello bob` to pass "bob"
-as the name to the "hello" task. This supports all parameter variants normal `nu` scripts could also
-handle. You may use `nur --help <task-name>` to see the help for an available command.
-
-Your tasks then can do whatever you want them to do in `nu` script. This allows for very structured
-usage of for example docker to run/manage your project needs. But it can also execute simple commands
-like you would normally do in your shell (like `npm ci` or something). `nur` is not tied to any
-programming language, packaging system or anything. As in the end the `nurfile` is basically a
-normal `nu` script you can put into this whatever you like.
-
-I recommend reading "Working with `nur`" below to get an overview how to use `nur`. Also I
-recommend reading the `nu` documentation about  [custom commands](https://www.nushell.sh/book/custom_commands.html) for details on how to
-define `nu` commands (and `nur` tasks) and at least read through the [nu quick tour](https://www.nushell.sh/book/quick_tour.html)
-to understand some basics and benefits about `nu` scripting.
-
-See [working with nur]({% link working-with-nur/index.md %}) for more details on how to define tasks.
+See [installation]({% link installation.md %}) for more details on how to install `nur`.
 
 ## Add a `nurfile` to your project
 
-You should add the `nurfile` to your project's version control system. This will allow you to
-easily share your tasks with your team. You can also extend the available tasks locally by
+You should add a file called `nurfile` to your project root folder. Add this file to version control
+as well, to share your tasks with your team. You can also extend the available tasks locally by
 adding an separate `nurfile.local` file to your project.
 
-The `nurfile` should be placed in the root of your project.
+## Adding some tasks
+
+`nur` tasks are defined by using sub commands to `nur` in your `nurfile`, following the normal
+`nu` syntax using `def`. A simple task could look like this:
+
+```shell
+def "nur hello" [] {
+    print "Hello world"
+}
+```
+
+You can then use `nur hello` to execute this task. Tasks may call external command like `npm ci`
+or `poetry install` or anything else you like. Tasks can also call other tasks, see the
+[working with nur]({% link working-with-nur/index.md %}) section for more details.
+
+{: .note }
+All tasks will be executed in the directory the `nurfile` was found in. If you place a `nurfile`
+in your project root (git root) you will be able to call tasks from anywhere inside the project.
+This is useful to always have a reproducible base setup for all your tasks.
 
 ### About task names
 
@@ -69,3 +54,8 @@ something like:
 * etc.
 
 See [best practices]({% link best-practices.md %}) for more details on how to structure your tasks.
+
+## Switching to `nur` from any other task runner
+
+If you are already using a task runner like `just` or `b5` you should read
+[switching to nur]({% link switching-to-nur.md %}) to get an overview on how to switch to `nur`.

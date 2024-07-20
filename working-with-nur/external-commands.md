@@ -1,11 +1,39 @@
 ---
-title: Call external commands
+title: Calling external commands
 parent: Working with nur
 layout: default
-nav_order: 20
+nav_order: 40
 ---
 
 # Calling external commands from `nur`
+
+If you want to execute any external command you can do that by just calling those commands as you are used to.
+If you for example want to run `poetry install` when using `nur install` you can do that like this:
+
+```shell
+def "nur install" [] {
+    poetry install
+}
+```
+
+## Provide `nur` tasks for wrapping shell commands
+
+If you want to use a `nur` to run and wrap any normal command - for example to ensure you can run this in
+any subdirectory of your project - I recommend using the following schema (using the `poetry`
+package manager as an example):
+
+```shell
+def --wrapped "nur poetry" [...args] {
+    poetry ...$args
+}
+```
+
+The important bit is using `--wrapped`, so the `nu` parser will not try to match flags starting with
+`-` into your `nur` task.
+
+See the [docs for def](https://www.nushell.sh/commands/docs/def.html) for some more details.
+
+## Avoid external command naming conflicts
 
 If you want to run external commands you might run into the issue that `nu` itself provides some
 [builtin commands](https://www.nushell.sh/commands/) that might match the name of the command
@@ -29,24 +57,12 @@ My recommendation would be to embrace the `nu` builtin commands and use the stru
 provide and consume as much as possible. See "Some notes about pipelines and how `nu` handles those"
 below for some more details on this.
 
-## Provide `nur` tasks for wrapping shell commands
+## About pipelines and how `nu` handles those
 
-If you want to use a `nur` to run and wrap any normal command - for example to ensure you can run this in
-any subdirectory of your project - I recommend using the following schema (using the `poetry`
-package manager as an example):
-
-```shell
-def --wrapped "nur poetry" [...args] {
-    poetry ...$args
-}
-```
-
-The important bit is using `--wrapped`, so the `nu` parser will not try to match flags starting with
-`-` into your `nur` task.
-
-See the [docs for def](https://www.nushell.sh/commands/docs/def.html) for some more details.
-
-## Some notes about pipelines and how `nu` handles those
+{: .note }
+The way `nu` shell handles pipelines is a bit different from normal UNIX shells. For me this is
+part of the `nu` superpowers and the reason I think `nu` is the perfect choice for building a
+task runner.
 
 Normal UNIX shells always use text to pass data from `stdout` (or `stderr`) to the next command via
 `stdin`. This is pretty easy to implement and a very slim contract to follow. `nu` however works quite
