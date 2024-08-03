@@ -2,7 +2,7 @@
 title: Calling external commands
 parent: Working with nur
 layout: default
-nav_order: 40
+nav_order: 50
 ---
 
 # Calling external commands from `nur`

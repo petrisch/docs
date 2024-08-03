@@ -9,8 +9,8 @@ nav_order: 10
 {: .important }
 You do **not** need to have `nu` shell installed for `nur` to work. `nur` does
 include the whole `nu` runtime engine and will run as a standalone command. As of this
-it will run on any shell including `bash`, `zsh`, `fish`, `powershell` and `nu` shell. You
-can use `nur` on Windows, MacOS and Linux.
+it will run on any shell including `bash`, `zsh`, `fish`, `powershell` and or course `nu`
+shell. You can use `nur` on Windows, MacOS and Linux.
 
 As of now `nur` is not available using common package managers. This is however no issue as `cargo`
 allows you to install packages into your own user directory.
@@ -23,7 +23,7 @@ Just run `cargo install nur` to install `nur` for your current user. The `nur` b
 added in `$HOME/.cargo/bin` (or `$"($env.HOME)/.cargo/bin"` in `nu` shell). Make sure to add
 this to `$PATH` (or `$env.PATH` in `nu` shell).
 
-Shell example (like Bash, zsh, ...):
+POSIX shell example (like Bash, zsh, ...):
 ```shell
 > cargo install nur
 > export PATH="$HOME/.cargo/bin:$PATH"  # put this into your .bashrc, .zshrc or similar
@@ -38,6 +38,9 @@ Shell example (like Bash, zsh, ...):
 ```
 
 # Alternative installation methods
+
+{: .note }
+Both methods will also ensure `nur` is available in your `$PATH`.
 
 ## MacOS
 

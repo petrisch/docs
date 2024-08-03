@@ -32,6 +32,8 @@ or `npm ci` or `cargo publish` or something similar - but you can also create mo
 however you like. You may look into the [`nurfile`](https://github.com/ddanier/nur/blob/main/nurfile) of
 `nur` itself for some examples.
 
+## Task output (return value)
+
 `nu` commands will use the result of the last line in the command body as the command return value. `nur`
 will then automatically print the return values of the task. The important thing to understand is that `nu`
 will see the output of a command as its return value. So this is also true for any command output

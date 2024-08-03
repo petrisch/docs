@@ -2,7 +2,7 @@
 title: Advanced
 parent: Working with nur
 layout: default
-nav_order: 60
+nav_order: 70
 ---
 
 # Advanced

@@ -2,7 +2,7 @@
 title: Modular tasks
 parent: Working with nur
 layout: default
-nav_order: 50
+nav_order: 60
 ---
 
 # Modular tasks

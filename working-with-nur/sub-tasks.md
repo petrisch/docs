@@ -2,7 +2,7 @@
 title: Sub tasks
 parent: Working with nur
 layout: default
-nav_order: 30
+nav_order: 40
 ---
 
 # Sub tasks
