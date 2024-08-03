@@ -7,7 +7,7 @@ nav_order: 50
 # Recommendations and best practices
 
 * Add a note about `nur` to your `README.md` and link to the documentation
-* Add the `nurfile` to git, allow each developer to extend the provided task by using a `nurfile.local` which
+* Add the `nurfile` to git + allow each developer to extend the provided task by using a `nurfile.local` which
   is ignored by your `.gitignore`
 * Provide some common tasks on each and every project, for me this would be something like:
     - `nur install`: Setup the project, install all dependencies
@@ -17,10 +17,10 @@ nav_order: 50
     - `nur test`: Run the tests
     - `nur lint`: Run the linter
     - `nur qa`: Run all QA jobs (like tests + linter)
-* On monorepos provide the same tasks for the whole project but also variants for the different components like
-  `nur backend test` and `nur frontend test` which will both be run by `nur test`
 * Use sub-tasks to group similar tasks. If you for example have tasks for exporting and importing the DB data
   you may use `nur db export` and `nur db import`
+* On monorepos provide the same tasks for the whole project but also variants for the different components like
+  `nur backend test` and `nur frontend test` which will both be run by `nur test`
 * When using more complex tasks, think about using [modules]({% link working-with-nur/modular-tasks.md %}) to
   help you structure your tasks.
 * Create tasks for all reoccurring tasks or tasks multiple people need to run

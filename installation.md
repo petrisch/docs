@@ -1,7 +1,7 @@
 ---
 title: Installation
 layout: default
-nav_order: 10
+nav_order: 20
 ---
 
 # Installing `nur`

@@ -35,7 +35,6 @@ then use those in your `nurfile`.
 Basic hello world example:
 ```shell
 # .nur/scripts/hello-world.nu
-
 export def main [] {
     print "Hello world"
 }

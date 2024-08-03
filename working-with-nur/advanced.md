@@ -48,7 +48,7 @@ as the base to do any modifications.
 ## Using aliases
 
 You may use `nu` aliases to create shorter versions of tasks. As this most of the time is a personal optimisation
-I recommend to set aliases only in  your personal `nurfile.local`.
+I recommend to set aliases only in your personal `nurfile.local`.
 
 Example:
 ```shell

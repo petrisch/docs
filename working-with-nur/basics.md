@@ -31,6 +31,11 @@ In addition you may add a file called `nurfile.local` to define personal, additi
 recommend adding the `nurfile` to git, while `nurfile.local` should be ignored. This allows
 each developer to have their own additional set of tasks.
 
+{: .tldr }
+> * Add a `nurfile` to your project root, this is just a normal `nu` script
+> * `nur` tasks need to be defined as subcommands to `"nur"`, like `def "nur something" [] { ... }`
+> * Tasks will always be executed in the directory the `nurfile` was found in, `nur` will `cd` into that directory
+
 ## Environment provided by `nur`
 
 `nur` will provide the internal state and config in the variable `$nur`, containing:
