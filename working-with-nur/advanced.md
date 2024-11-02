@@ -42,7 +42,7 @@ After this file was loaded those changes will already be active, allowing you to
 configuration.
 
 See the [`nu` documentation on `env.nu` and `config.nu` files](https://www.nushell.sh/book/configuration.html#nushell-configuration-with-env-nu-and-config-nu)
-for some more insights. You may use the [default variants of both files](https://github.com/ddanier/nur/tree/main/src/nu-scripts)
+for some more insights. You may use the [default variants of both files](https://github.com/nur-taskrunner/nur/tree/main/src/nu-scripts)
 as the base to do any modifications.
 
 ## Using aliases

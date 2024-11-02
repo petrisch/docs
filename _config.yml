@@ -6,7 +6,7 @@ url: https://nur-taskrunner.github.io/docs/
 
 nav_external_links:
   - title: nur on GitHub
-    url: https://github.com/ddanier/nur
+    url: https://github.com/nur-taskrunner/nur
 
 callouts_level: quiet # or loud
 callouts:

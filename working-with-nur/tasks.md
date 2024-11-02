@@ -29,7 +29,7 @@ script code.
 
 For the most tasks this means your `nur` task will just execute some system commands like `poetry install`
 or `npm ci` or `cargo publish` or something similar - but you can also create more complex tasks,
-however you like. You may look into the [`nurfile`](https://github.com/ddanier/nur/blob/main/nurfile) of
+however you like. You may look into the [`nurfile`](https://github.com/nur-taskrunner/nur/blob/main/nurfile) of
 `nur` itself for some examples.
 
 ## Task output (return value)

@@ -46,11 +46,11 @@ Both methods will also ensure `nur` is available in your `$PATH`.
 
 For MacOS you can use my unofficial [Homebrew](https://brew.sh/) tap to install `nur`. All necessary
 steps are documented in the repository:
-[https://github.com/ddanier/nur-homebrew](https://github.com/ddanier/nur-homebrew)  
+[https://github.com/nur-taskrunner/homebrew](https://github.com/nur-taskrunner/homebrew)  
 (This will allow you to just use `brew install nur`)
 
 ## Windows 
 
 For Windows you can just use the provided binaries available in each release version. Note the
 `.msi` package might be the easiest to use:
-[https://github.com/ddanier/nur/releases](https://github.com/ddanier/nur/releases)
+[https://github.com/nur-taskrunner/nur/releases](https://github.com/nur-taskrunner/nur/releases)
