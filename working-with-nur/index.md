@@ -9,5 +9,3 @@ has_children: true
 
 As shown above you can use subcommands to `"nur"` to add your tasks. This section will give
 you some more details and some hints how to do this in the best way possible.
-
-

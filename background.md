@@ -46,6 +46,7 @@ superpowers inside your defined tasks.
 
 `nur` stands for "nu run". Basically it should be "nu run task", which would lead to "nurt" - but then I
 decided for just "nur" as:
-* `nur` is very fast to type (one less character 💪)
-* `nur` is the reverse of `run`, which I like as a side effect 🥳
-* and then as a nice and also weird side effect: You could translate "just" to "nur" in german 😂
+
+- `nur` is very fast to type (one less character 💪)
+- `nur` is the reverse of `run`, which I like as a side effect 🥳
+- and then as a nice and also weird side effect: You could translate "just" to "nur" in german 😂

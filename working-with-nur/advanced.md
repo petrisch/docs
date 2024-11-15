@@ -9,7 +9,7 @@ nav_order: 70
 
 ## Low level `nur` usage
 
-When using your own commands as utilities and maybe even pack those into modules it may come in handy to
+When using your own commands as utilities and maybe even pack those into modules, it may come in handy to
 run those commands one by one - either for debugging or to just get some small portion of your `nurfile`
 run in rare occasions.
 
@@ -28,17 +28,18 @@ specific, see below.
 ## Provide `env.nu` and `config.nu` for project specific setup
 
 Like [with `nu`](https://www.nushell.sh/book/configuration.html) you can have your own environment
-and configuration files in `nur. Unline `nu` those don't live in your `$HOME` folder but can be put into the
+and configuration files in `nur`. Unlike `nu` those don't live in your `$HOME` folder but can be put into the
 project and as of this into version control. This also means you can have different configurations for
 different projects.
 
 `nur` will load those files if they exist:
-* `.nur/env.nu` for the environment
-* `.nur/config.nu` for the configuration
+
+- `.nur/env.nu` for the environment
+- `.nur/config.nu` for the configuration
 
 The recommended usage is to put environment changes like changes to `$env.NU_LIB_DIRS` into `env.nur`.
-After this file was loaded those changes will already be active, allowing you to for example `source` or
-`use` modules from additional paths. Then you may use the `config.nu` to add project specific, but global,
+After this file was loaded, those changes will already be active, allowing you to, for example, `source` or
+`use` modules from additional paths. Then you may use the `config.nu` to add a project specific, but global,
 configuration.
 
 See the [`nu` documentation on `env.nu` and `config.nu` files](https://www.nushell.sh/book/configuration.html#nushell-configuration-with-env-nu-and-config-nu)
@@ -51,7 +52,8 @@ You may use `nu` aliases to create shorter versions of tasks. As this most of th
 I recommend to set aliases only in your personal `nurfile.local`.
 
 Example:
-```shell
+
+```nushell
 # Install task defined by nurfile
 def "nur install" [] {
     # ...
@@ -67,9 +69,9 @@ This will allow you to use `nur i` instead of `nur install` to run the `nur inst
 
 You may also look into those `nu` topics:
 
-* [Commands](https://www.nushell.sh/book/custom_commands.html)
-* [Variables](https://www.nushell.sh/book/variables_and_subexpressions.html) (also covers immutable/mutable variables)
-* [Operators](https://www.nushell.sh/book/operators.html)
-* [Control flow](https://www.nushell.sh/book/control_flow.html)
-* [Builtin commands](https://www.nushell.sh/commands/)
-* [Modules](https://www.nushell.sh/book/modules.html)
+- [Commands](https://www.nushell.sh/book/custom_commands.html)
+- [Variables](https://www.nushell.sh/book/variables_and_subexpressions.html) (also covers immutable/mutable variables)
+- [Operators](https://www.nushell.sh/book/operators.html)
+- [Control flow](https://www.nushell.sh/book/control_flow.html)
+- [Builtin commands](https://www.nushell.sh/commands/)
+- [Modules](https://www.nushell.sh/book/modules.html)
